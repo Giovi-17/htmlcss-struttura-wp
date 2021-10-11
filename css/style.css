@@ -11,14 +11,28 @@
     width: 80%;
     margin: auto;
 }
+
+/* struttura per layout */
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col{
+    background-color: #abcfe7;
+    height: 400px;
+    float: left;
+}
+
 /* HEADER */
 
-.col-title{
+.header-top{
     height: 80px;
     background-color: #e579e6;
 }
 
-.col-principale{
+.header-bottom{
     height: 345px;
     background-color: #e1d67a;
     margin: 30px 0;
@@ -30,12 +44,6 @@ main{
     margin: 10px 0;
 }
 
-.clearfix{
-    content: "";
-    display: table;
-    clear: both;
-}
-
 /* Colonne superiori */
 .col-superiore{
     background-color: #abcfe7;
@@ -43,29 +51,19 @@ main{
 }
 
 /* Colonne inferiori */
-.col{
-    background-color: #abcfe7;
-    height: 400px;
-    float: left;
-}
-
 .col-inferiore{
     width: 100%;
     padding: 20px 0 10px 0;
 }
 
-.col-sinistra{
+.col-sinistra, .col-destra{
     width: 23.5%;
-    
+
 }
 
 .col-centro{
     width: 50%;
     margin: 0 1.5%;
-}
-
-.col-destra{
-    width: 23.5%;
 }
 
 /* FOOTER */
